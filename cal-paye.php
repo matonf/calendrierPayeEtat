@@ -48,7 +48,7 @@ $cal = "BEGIN:VCALENDAR" . "\r\n" . "VERSION:2.0" . "\r\n" . "PRODID:-//CAL PAYE
 //choisissez entre l'année glissante, du mois courant à +12
 //for ($i=0; $i<12; $i++) $cal .= ajouterEven(date("n")+$i, "PAYE-$i", "💶 Jour de paye !");
 //ou l'année civile
-for ($i=1; $i<=12; $i++) $cal .= ajouterPaye($i, "PAYE-$i", "💶 Jour de paye !", "source : https://onfray.info/cache-paye.ics");
+for ($i=1; $i<=12; $i++) $cal .= ajouterPaye($i, "PAYE-$i", "💶 Jour de paye !", "Le code source est disponible ici : https://github.com/matonf/calendrierPayeEtat. Le calendrier est à cette adresse : https://onfray.info/cache-paye.ics");
 //fin du calendrier
 $cal .= "END:VCALENDAR";
 echo $cal;
